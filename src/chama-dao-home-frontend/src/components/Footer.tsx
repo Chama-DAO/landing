@@ -71,7 +71,7 @@ function Footer() {
             <ul className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/chama-dao-127680303/"
+                  href="https://www.linkedin.com/company/chama-dao/"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"

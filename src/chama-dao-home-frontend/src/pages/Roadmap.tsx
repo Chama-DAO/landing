@@ -115,7 +115,7 @@ const dummyContent = [
         </ul>
       </>
     ),
-    badge: "In-progress",
+    badge: "Upcoming",
     image: prelaunch,
   },
   {
@@ -154,7 +154,7 @@ const dummyContent = [
         </ul>
       </>
     ),
-    badge: "In-progress",
+    badge: "Upcoming",
     image: launch,
   },
   {
@@ -210,7 +210,7 @@ const dummyContent = [
         </ul>
       </>
     ),
-    badge: "In-progress",
+    badge: "Upcoming",
     image: postLaunch,
   },
 
@@ -235,7 +235,7 @@ const dummyContent = [
         </ul>
       </>
     ),
-    badge: "Upcoming",
+    badge: "Future",
     image: finalImage,
   },
 ];
