@@ -115,7 +115,7 @@ function Footer() {
 
               <li>
                 <a
-                  href="/"
+                  href="https://github.com/Chama-DAO"
                   rel="noreferrer"
                   target="_blank"
                   className="text-gray-700 transition hover:opacity-75"

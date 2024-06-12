@@ -1,4 +1,3 @@
-import { FaHands } from "react-icons/fa";
 import { MdLaunch } from "react-icons/md";
 import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
@@ -20,14 +19,18 @@ export const MobileNavbar = () => {
   };
   const handleNavigation = (path: string) => {
     navigate(path);
+    if (path === "/") return;
     handleToggleMenu();
   };
   return (
     <div className="w-full">
       {!toggleMenu ? (
         <div className="flex p-4 justify-between items-center w-[100%]">
-          <div className="flex gap-2 cursor-pointer justify-center items-center">
-            <img src={logo} alt="logo-img" />
+          <div
+            className="flex gap-2 cursor-pointer justify-center items-center"
+            onClick={() => handleNavigation("/")}
+          >
+            <img src={logo} alt="logo-img" height={200} width={200} />
           </div>
           <div className="flex items-center" onClick={handleToggleMenu}>
             <IoMenu size={34} />
@@ -45,7 +48,7 @@ export const MobileNavbar = () => {
           </div>
           <ul className="w-full flex flex-col items-center font-heading">
             <li
-              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-16 text-2xl w-[80%] flex justify-between"
+              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/whitepaper")}
             >
               Whitepaper
@@ -54,7 +57,7 @@ export const MobileNavbar = () => {
             <li className="h-[0.08rem] bg-gray-400 w-full"></li>
 
             <li
-              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-16 text-2xl w-[80%] flex justify-between"
+              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/features")}
             >
               Features
@@ -62,7 +65,7 @@ export const MobileNavbar = () => {
             </li>
             <li className="h-[0.05rem] bg-gray-400 w-full"></li>
             <li
-              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-16 text-2xl w-[80%] flex justify-between"
+              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/roadmap")}
             >
               Roadmap
@@ -70,11 +73,24 @@ export const MobileNavbar = () => {
             </li>
             <li className="h-[0.08rem] bg-gray-400 w-full"></li>
             <li
-              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-16 text-2xl w-[80%] flex justify-between"
+              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/faqs")}
             >
               FAQs
               <FaArrowRight />
+            </li>
+            <li className="h-[0.05rem] bg-gray-400 w-full"></li>
+            <li className="hover:text-primary ease-in-out duration-200 border-green-700 my-10 cursor-pointer flex items-center">
+              <Link to="/app">
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className=" bg-white text-black flex items-center space-x-2 font-body"
+                >
+                  <MdLaunch />
+                  <span>Launch App</span>
+                </HoverBorderGradient>
+              </Link>
             </li>
           </ul>
         </div>
@@ -85,10 +101,10 @@ export const MobileNavbar = () => {
 
 const Navbar = () => {
   return (
-    <div className="p-4 mt-2 flex justify-between items-center mx-16 my-0">
+    <div className="p-4 mt-2 flex justify-between items-center lg:mx-16 my-0">
       <Link to="/">
         <div className="flex gap-2 cursor-pointer justify-center items-center">
-          <img src={logo2} alt="logo-image" />
+          <img src={logo2} alt="logo-image" width={200} height={200} />
         </div>
       </Link>
       <div>
@@ -112,16 +128,16 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <a href="https://github.com/divin3circle/inua_dao" target="_blank">
+      <Link to="/app">
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
-          className=" bg-white text-black flex items-center space-x-2"
+          className=" bg-white text-black flex items-center space-x-2 font-body"
         >
           <MdLaunch />
           <span>Launch App</span>
         </HoverBorderGradient>
-      </a>
+      </Link>
     </div>
   );
 };

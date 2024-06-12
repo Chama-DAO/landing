@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { MdGeneratingTokens } from "react-icons/md";
 import { Link } from "react-router-dom";
+import token from "../assets/token.jpeg";
+import icpToken from "../assets/icptoken.webp";
 
 function Token() {
   const [price, setPrice] = useState<number>(0);
@@ -19,7 +21,7 @@ function Token() {
       //   console.log(price);
     };
     setTokenPrice();
-  }, []);
+  }, [price]);
 
   return (
     <div className="mt-12">
@@ -63,7 +65,7 @@ function Token() {
                 <li>
                   <a href="#" className="group block">
                     <img
-                      src="https://images.ctfassets.net/q5ulk4bp65r7/5Dhk0rBQjluyfM7qXWuXC4/d3be5bb4b28724813348f9d8f2de8d56/Learn_Illustration_What_is_a_Token.jpg"
+                      src={token}
                       alt=""
                       className="aspect-square w-full rounded object-cover"
                     />
@@ -87,7 +89,7 @@ function Token() {
                     className="group block"
                   >
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/024/092/997/original/internet-computer-icp-glass-crypto-coin-3d-illustration-free-png.png"
+                      src={icpToken}
                       alt=""
                       className="aspect-square w-full rounded object-cover"
                     />

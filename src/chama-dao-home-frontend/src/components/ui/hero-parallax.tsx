@@ -8,6 +8,8 @@ import {
 } from "framer-motion";
 import { Link } from "react-router-dom";
 import hb from "../../assets/hb1.jpeg";
+import { HoverBorderGradient } from "./hover-border-gradient";
+import { MdLaunch } from "react-icons/md";
 
 export const HeroParallax = ({
   products,
@@ -60,6 +62,19 @@ export const HeroParallax = ({
       className=" py-20 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
+      <Link
+        to="/app"
+        className="w-full flex items-center justify-center mt-10 md:hidden"
+      >
+        <HoverBorderGradient
+          containerClassName="rounded-full"
+          as="button"
+          className=" bg-white text-black flex items-center space-x-2 text-xl font-body"
+        >
+          <MdLaunch />
+          <span>Launch App</span>
+        </HoverBorderGradient>
+      </Link>
       {/* <h1 className="text-2xl md:text-7xl font-bold text-center font-heading text-primary">
         Features
       </h1> */}

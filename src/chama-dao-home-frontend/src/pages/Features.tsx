@@ -1,4 +1,8 @@
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
+import edu from "../assets/edu.jpeg";
+import stake from "../assets/loans.jpeg";
+import loaning from "../assets/stake.jpeg";
+import chamas from "../assets/chamas.jpeg";
 
 const content = [
   {
@@ -10,7 +14,7 @@ const content = [
         <img
           width={300}
           height={300}
-          src="https://familybank.co.ke/family-bank/wp-content/uploads/2019/08/chama-account-1200px.jpg"
+          src={chamas}
           alt="Chamas"
           className="rounded-md h-full w-full object-cover"
         />
@@ -24,7 +28,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://cdn.standardmedia.co.ke/images/wysiwyg/images/Xu4dWpNkruv6fgPBD1cPVbSAoXrtGEMwvPeytuyl.jpg"
+          src={stake}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -34,13 +38,13 @@ const content = [
     ),
   },
   {
-    title: "Loand and Grants",
+    title: "Loans and Grants",
     description:
       "As a chama you can receive grants or loans with little or paperwork from different smart contracts on the platform depending on the amount you've staked. Individuals can also get quick loans using their staked amount as collateral.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://cdn.standardmedia.co.ke/images/wednesday/riding_on_chamas61d4b79eb0cfe.jpg"
+          src={loaning}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -56,7 +60,7 @@ const content = [
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src="https://images.squarespace-cdn.com/content/v1/5a5baed98dd041eb3ccb3b54/1541536856890-0CME1CWRQX6JDG62LDJC/IMG_6745.jpg"
+          src={edu}
           width={300}
           height={300}
           className="h-full w-full object-cover"

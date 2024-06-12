@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Roadmap from "./pages/Roadmap";
 import Features from "./pages/Features";
 import Whitepaper from "./pages/Whitepaper";
+import ChamaApp from "./pages/ChamaApp";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="roadmap" element={<Roadmap />} />
         <Route path="features" element={<Features />} />
         <Route path="whitepaper" element={<Whitepaper />} />
+        <Route path="app" element={<ChamaApp />} />
       </Routes>
       <Footer />
     </Router>

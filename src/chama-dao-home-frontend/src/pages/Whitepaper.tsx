@@ -1,8 +1,9 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import TokenDistribution from "../components/TokenDistribution";
 
 const Whitepaper = () => {
   return (
-    <div className="bg-background text-text font-body">
+    <div className="bg-white text-text font-body">
       <div className="max-w-4xl mx-auto p-8">
         <h1 className="text-4xl font-heading text-primary mb-4">
           ChamaDAO Whitepaper
@@ -130,10 +131,10 @@ const Whitepaper = () => {
           <p className="leading-relaxed">
             Users can stake their tokens to gain voting power and access loans.
             Staked tokens determine a user’s influence within the platform and
-            serve as collateral for over-collateralized loans.
+            serve as collateral for over-collateralize loans.
           </p>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Over-Collateralized Loan System
+            Over-Collateralize Loan System
           </h3>
           <p className="leading-relaxed">
             ChamaDAO’s loan system is modeled after DeFi platforms like Aave,
@@ -202,7 +203,7 @@ const Whitepaper = () => {
             Tokenomics: Distribution, Staking & Voting Mechanisms
           </h3>
           <p className="leading-relaxed">
-            // Details about token distribution, staking, and voting mechanisms.
+            <TokenDistribution />
           </p>
         </section>
 
@@ -235,6 +236,11 @@ const Whitepaper = () => {
             community finance, continually evolving to meet user needs and
             technological advancements.
           </p>
+          <Link to="/roadmap">
+            <p className="text-center font-body font-semibold text-xl text-primary cursor-pointer my-5">
+              See Roadmap.
+            </p>
+          </Link>
         </section>
 
         <section className="mb-8">
