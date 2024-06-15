@@ -12,7 +12,7 @@ function Token() {
       "https://www.binance.com/fapi/v1/ticker/price?symbol=ICPUSDT"
     );
     const data = await res.json();
-    return data?.price ? data.price : 0;
+    return data?.price ? data.price : "--";
   };
   useEffect(() => {
     const setTokenPrice = async () => {
@@ -21,7 +21,7 @@ function Token() {
       //   console.log(price);
     };
     setTokenPrice();
-  }, [price]);
+  }, []);
 
   return (
     <div className="mt-12">

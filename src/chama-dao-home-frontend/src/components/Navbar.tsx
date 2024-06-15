@@ -4,7 +4,6 @@ import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import logo from "../../public/logo.png";
 import { IoMdClose } from "react-icons/io";
 import logo2 from "../../public/logo2.png";
 import { RxDotFilled } from "react-icons/rx";
@@ -30,7 +29,11 @@ export const MobileNavbar = () => {
             className="flex gap-2 cursor-pointer justify-center items-center"
             onClick={() => handleNavigation("/")}
           >
-            <img src={logo} alt="logo-img" height={200} width={200} />
+            <img src={logo2} alt="logo-img" height={75} width={75} />
+            <h1 className="text-primary text-xl font-heading font-bold mt-2">
+              CHAMA
+              <span className="text-secondaryAccent">DAO</span>
+            </h1>
           </div>
           <div className="flex items-center" onClick={handleToggleMenu}>
             <IoMenu size={34} />
@@ -38,12 +41,20 @@ export const MobileNavbar = () => {
         </div>
       ) : (
         <div className="backdrop-blur-sm h-screen bg-[#fff]">
-          <div className="flex items-center justify-between px-4">
-            <img
-              src={logo}
-              alt="logo-img"
-              onClick={() => handleNavigation("/")}
-            />
+          <div className="flex items-center justify-between px-4 my-4">
+            <div className="flex gap-2 items-center">
+              <img
+                src={logo2}
+                alt="logo-img"
+                onClick={() => handleNavigation("/")}
+                width={75}
+                height={75}
+              />
+              <h1 className="text-primary text-xl font-heading font-bold mt-2">
+                CHAMA
+                <span className="text-secondaryAccent">DAO</span>
+              </h1>
+            </div>
             <IoMdClose size={34} onClick={handleToggleMenu} />
           </div>
           <ul className="w-full flex flex-col items-center font-heading">
@@ -81,7 +92,7 @@ export const MobileNavbar = () => {
             </li>
             <li className="h-[0.05rem] bg-gray-400 w-full"></li>
             <li className="hover:text-primary ease-in-out duration-200 border-green-700 my-10 cursor-pointer flex items-center">
-              <Link to="/app">
+              <div onClick={() => handleNavigation("app")}>
                 <HoverBorderGradient
                   containerClassName="rounded-full"
                   as="button"
@@ -90,7 +101,7 @@ export const MobileNavbar = () => {
                   <MdLaunch />
                   <span>Launch App</span>
                 </HoverBorderGradient>
-              </Link>
+              </div>
             </li>
           </ul>
         </div>
@@ -104,7 +115,11 @@ const Navbar = () => {
     <div className="p-4 mt-2 flex justify-between items-center lg:mx-16 my-0">
       <Link to="/">
         <div className="flex gap-2 cursor-pointer justify-center items-center">
-          <img src={logo2} alt="logo-image" width={200} height={200} />
+          <img src={logo2} alt="logo-image" height={75} width={75} />
+          <h1 className="text-primary text-3xl font-heading font-bold mt-2">
+            CHAMA
+            <span className="text-secondaryAccent">DAO</span>
+          </h1>
         </div>
       </Link>
       <div>

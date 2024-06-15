@@ -1,13 +1,14 @@
 import React from "react";
+import appImage from "../assets/app.webp";
 
 function ChamaApp() {
   return (
     <div>
       <div className="flex h-screen flex-col bg-white max-w-[1100px] mx-auto my-0">
         <img
-          src="https://miro.medium.com/v2/resize:fit:1200/1*foWIVJFs1URgyR7WxLWbUA.png"
+          src={appImage}
           alt=""
-          className="h-64 w-full object-cover"
+          className="h-64 w-full object-cover md:rounded-md shadow-md"
         />
 
         <div className="flex flex-1 items-center justify-center">

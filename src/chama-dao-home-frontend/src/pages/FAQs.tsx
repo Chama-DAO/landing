@@ -81,7 +81,7 @@ function FAQs() {
               to="/whitepaper"
               className="underline text-primary font-semibold"
             >
-              tokenomics section.
+              tokenomics section
             </Link>
             .
           </p>
