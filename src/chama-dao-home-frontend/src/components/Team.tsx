@@ -139,7 +139,7 @@ function Team() {
               </div>
 
               <p className="mt-4 text-gray-700 font-body">
-                Also a mechanical engineering student whose passion lies and
+                A mechanical engineering student whose passion lies and
                 intersects at the heart of technology. Having a background of
                 Java and Springboot for backend development, Ian crafts backend
                 web applications as well as their community engagement.
