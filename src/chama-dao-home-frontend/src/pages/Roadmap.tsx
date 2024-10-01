@@ -51,36 +51,32 @@ export default function Roadmap() {
 
 const dummyContent = [
   {
-    title: "Phase 1: Genesis",
+    title: "Phase 1: Genesis - Q4 2021",
     description: (
       <>
         <ul className="font-rem text-text leading-relaxed font-body py-2">
           <li className="py-2">
             <span className="text-primary font-semibold py-2">
-              User onboarding and education:
+              Alpha & Beta tests:
             </span>{" "}
-            Educate users about the benefits of Chama DAO and how to get
-            started.
+            Conduct controlled alpha & beta test to gather feedback and improve
+            the platform. We plan to have one alpha test and two beta test by
+            the end of the 2024.
           </li>
           <li className="py-2">
             <span className="text-primary font-semibold py-2">
-              Wallet connection:{" "}
+              Iteration Development:{" "}
             </span>{" "}
-            Connect users' wallets to the Chama DAO platform to enable token
-            acquisition and airdrops
+            Implement feedback from the tests to improve the platform and add
+            new features based on user feedback.
           </li>
           <li className="py-2">
             <span className="text-primary font-semibold py-2">
-              Basic staking features:
+              Launch preparation:
             </span>{" "}
-            Allow users to stake their tokens to earn rewards and participate in
-            governance.
-          </li>
-          <li className="py-2">
-            <span className="text-primary font-semibold py-2">
-              Chamas feature(Financial Teams)
-            </span>{" "}
-            Allow users to create and join chamas(financial teams)
+            Prepare the platform for the mainnet launch by conducting security
+            audits and finalizing the platform's features. Plus increased
+            marketing efforts to attract more users and hit the ground running.
           </li>
         </ul>
       </>
@@ -89,28 +85,30 @@ const dummyContent = [
     image: icpImage,
   },
   {
-    title: "Phase 2: Liquidity and Loans",
+    title: "Phase 2: Product Launch - Q1 2025",
     description: (
       <>
         <ul className="leading-relaxed text-text font-body">
           <li className="py-2">
             <span className="text-primary font-semibold">
-              Liquidity provision:
+              Launch the platform:
             </span>{" "}
-            Allow users to provide liquidity to loaning canisters(smart
-            contracts) and earn interest.
+            Release The ChamaDAO to the public and start onboarding users.
+            Continued marketing efforts to attract more users.
           </li>
           <li className="py-2">
-            <span className="text-primary font-semibold">Loaning system:</span>{" "}
-            Implement a crypto loaning system and setup interest rates and other
-            loans parameters.
+            <span className="text-primary font-semibold">CMC Token</span> Begin
+            working on the ChamaDAO token and its integration with the ICP
+            ecosystem. As well as raising funds for the project. Also intense
+            marketing efforts to popularize the CMC token to our user base.
           </li>
           <li className="py-2">
             <span className="text-primary font-semibold">
-              Chama Project and Financial goals:
+              Finalize ChamaDAO features:
             </span>{" "}
-            Allow chama members to set and manage the goals and project of their
-            chamas.
+            Implement any remaining major features that were not included in the
+            initial launch and beta tests. This includes features such as
+            staking, voting, and governance mechanisms.
           </li>
         </ul>
       </>
@@ -119,7 +117,7 @@ const dummyContent = [
     image: prelaunch,
   },
   {
-    title: "Phase 3: Educational content",
+    title: "Phase 3: Educational content & Investments Q2 2025",
     description: (
       <>
         <ul className="font-rem leading-relaxed text-text font-body">
@@ -138,18 +136,11 @@ const dummyContent = [
           </li>
           <li className="py-2">
             <span className="text-primary font-semibold">
-              Grant Application and Management:
+              Investment Application and Management:
             </span>{" "}
-            Allow investors to setup grants for different chamas depending on
-            the chama's financial goals and projects. Also enable chamas to
-            apply for these grants.
-          </li>
-          <li className="py-2">
-            <span className="text-primary font-semibold">
-              Advanced staking and voting features:
-            </span>{" "}
-            Build on the staking and voting features implemented on the first
-            phase to increase app's stability.
+            Allow investors to setup grants & investments for different chamas
+            depending on the chama's financial goals and projects. Also enable
+            chamas to apply for these grants.
           </li>
         </ul>
       </>
