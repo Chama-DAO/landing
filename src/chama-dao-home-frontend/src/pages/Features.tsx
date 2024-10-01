@@ -6,9 +6,9 @@ import chamas from "../assets/chamas.jpeg";
 
 const content = [
   {
-    title: "Finance Teams (Chamas)",
+    title: "Decentralized Accountability",
     description:
-      "Chamas have been a robust structure used by local communities in Kenya and have proven how effective they can be when used correctly. Chama foster communal participation which is actually one of the main themes focused on by Chama DAO.",
+      "Ensure that no single person has disproportionate control. With decentralized governance, all decisions are made collectively, and every action is recorded on the blockchain.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
@@ -22,9 +22,9 @@ const content = [
     ),
   },
   {
-    title: "Staking and Voting",
+    title: "Full Transparency",
     description:
-      "Be at the core every decision that is made by your chama. Unlike most traditional where some of the decisions are made by a few individuals, Chama DAO ensures all members of the Chama have a say in all decisions made.",
+      " Say goodbye to hidden financial records. ChamaDAO’s blockchain-powered ledger ensures that every transaction is visible and immutable, building trust among all members.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
@@ -38,13 +38,13 @@ const content = [
     ),
   },
   {
-    title: "Loans and Grants",
+    title: " Efficient Decision-Making",
     description:
-      "As a chama you can receive grants or loans with little or paperwork from different smart contracts on the platform depending on the amount you've staked. Individuals can also get quick loans using their staked amount as collateral.",
+      "Streamline your group’s decision-making process with automated voting mechanisms, reducing delays and empowering every member to have their voice heard instantly.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src={loaning}
+          src={edu}
           width={300}
           height={300}
           className="h-full w-full object-cover"
@@ -54,13 +54,13 @@ const content = [
     ),
   },
   {
-    title: "Educational Content",
+    title: "Frictionless Transactions",
     description:
-      "Get access to a ton of educational materials from understanding crypto to how you can manage and scale a business of your choice both as an individual and as a chama. In addition you can become a content provider posting educational materials to the platform and earing some tokens.",
+      "Manage contributions and withdrawals quickly and affordably. ChamaDAO integrates with your local banks & mobile money providers, reducing transaction fees and increasing operational efficiency.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <img
-          src={edu}
+          src={loaning}
           width={300}
           height={300}
           className="h-full w-full object-cover"
