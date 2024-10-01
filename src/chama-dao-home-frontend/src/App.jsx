@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar, { MobileNavbar } from "./components/Navbar";
 import Landing from "./pages/Landing";
-import FAQs from "./pages/FAQs";
 import Footer from "./components/Footer";
 import Roadmap from "./pages/Roadmap";
 import Features from "./pages/Features";
 import Whitepaper from "./pages/Whitepaper";
 import ChamaApp from "./pages/ChamaApp";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -19,11 +19,11 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/faqs" element={<FAQs />} />
         <Route path="roadmap" element={<Roadmap />} />
         <Route path="features" element={<Features />} />
         <Route path="whitepaper" element={<Whitepaper />} />
         <Route path="app" element={<ChamaApp />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
     </Router>

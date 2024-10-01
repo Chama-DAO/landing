@@ -57,7 +57,7 @@ export const MobileNavbar = () => {
             </div>
             <IoMdClose size={34} onClick={handleToggleMenu} />
           </div>
-          <ul className="w-full flex flex-col items-center font-heading gap-8">
+          <ul className="w-full flex flex-col items-center font-heading gap-8 mt-20">
             <li
               className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/whitepaper")}
@@ -82,14 +82,7 @@ export const MobileNavbar = () => {
               Roadmap
               <FaArrowRight />
             </li>
-            <li className="h-[0.08rem] bg-gray-400 w-full"></li>
-            <li
-              className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
-              onClick={() => handleNavigation("/faqs")}
-            >
-              FAQs
-              <FaArrowRight />
-            </li>
+
             <li className="h-[0.05rem] bg-gray-400 w-full"></li>
             <li className="hover:text-primary ease-in-out duration-200 border-green-700 my-10 cursor-pointer flex items-center">
               <div onClick={() => handleNavigation("app")}>
@@ -136,10 +129,6 @@ const Navbar = () => {
           <li className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer flex gap-2 items-center">
             <RxDotFilled />
             <Link to="/roadmap">ROADMAP</Link>
-          </li>
-          <li className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer flex gap-2 items-center">
-            <RxDotFilled />
-            <Link to="/faqs">FAQs</Link>
           </li>
         </ul>
       </div>
