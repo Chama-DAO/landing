@@ -1,29 +1,8 @@
 {
   "canisters": {
-    "chama-dao-home-backend": {
-      "build": "npx azle chama-dao-home-backend",
-      "candid": "src/chama-dao-home-backend/chama-dao-home-backend.did",
-      "gzip": true,
-      "main": "src/chama-dao-home-backend/src/index.ts",
-      "tech_stack": {
-        "cdk": {
-          "azle": {}
-        },
-        "language": {
-          "javascript": {},
-          "typescript": {}
-        }
-      },
-      "type": "custom",
-      "wasm": ".azle/chama-dao-home-backend/chama-dao-home-backend.wasm"
-    },
     "chama-dao-home-frontend": {
-      "dependencies": [
-        "chama-dao-home-backend"
-      ],
-      "source": [
-        "src/chama-dao-home-frontend/dist"
-      ],
+      "dependencies": [],
+      "source": ["src/chama-dao-home-frontend/dist"],
       "type": "assets",
       "workspace": "chama-dao-home-frontend"
     }
