@@ -6,7 +6,7 @@ const Whitepaper = () => {
     <div className="bg-white text-text font-body">
       <div className="max-w-4xl mx-auto p-8">
         <h1 className="text-4xl font-heading text-primary mb-4">
-          ChamaDAO Whitepaper
+          The ChamaDAO Whitepaper
         </h1>
 
         <section className="mb-8">
@@ -39,7 +39,9 @@ const Whitepaper = () => {
             DeFi leverages blockchain technology to offer financial services
             without intermediaries, making transactions more transparent,
             secure, and accessible. By integrating Chamas with DeFi, we can
-            enhance their efficiency, security, and scalability.
+            enhance their efficiency, security, and scalability. We can
+            therefore decentralize these financial groups that are the supposed
+            to be the blueprints of DAOs.
           </p>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
             Introduction to ChamaDAO and its Vision
@@ -49,7 +51,10 @@ const Whitepaper = () => {
             bring Chamas into the digital age. Our vision is to create a
             decentralized platform where Chamas can manage their finances,
             access loans, earn interest, and receive grants all within a secure,
-            transparent blockchain environment.
+            transparent blockchain environment. And since chamas have
+            historically been about collective action they will operate as
+            mini-DAOs within the whole larger ChamaDAO, making decisions that
+            affect them collectively & independently.
           </p>
         </section>
 
@@ -63,7 +68,12 @@ const Whitepaper = () => {
           <p className="leading-relaxed">
             The Internet Computer Protocol (ICP) is a blockchain technology that
             enables the development of decentralized applications (dApps) with
-            high scalability, low costs, and enhanced security.
+            high scalability, low costs, and enhanced security. More information
+            about ICP can be found{" "}
+            <span className="text-primary cursor-pointer">
+              <a href="https://internetcomputer.org/">here</a>
+            </span>
+            .
           </p>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
             Description of the Smart Contract System (Canisters)
@@ -72,7 +82,17 @@ const Whitepaper = () => {
             Canisters are the smart contracts on the ICP blockchain that
             facilitate various operations within ChamaDAO. These canisters
             handle user authentication, transaction processing, staking,
-            liquidity provision, and governance.
+            liquidity provision, and governance. They are designed to be secure,
+            scalable, and efficient. In our platform these canisters will be
+            responsible for processing transactions, managing user profiles, and
+            executing financial & community operations,such as making a proposal
+            to change an aspect of the chama a user is part of. There will also
+            be canisters specifically for data storage and execution of commands
+            set by chama members once a particular set of conditions(proposal)
+            has passed. Actions such as releasing funds to a loanee or changing
+            the interest rate on a loan will be handled automatically. This is
+            just a tip of the ice berg of what can be achieved as far as
+            automation and canister execution is concerned.
           </p>
         </section>
 
@@ -82,10 +102,15 @@ const Whitepaper = () => {
           </h2>
           <p className="leading-relaxed">
             Users on ChamaDAO can sign up and create profiles providing optional
-            information about themselves and their activities. Users can be
-            categorized as investors/VCs or normal users. They have the ability
-            to create or join Chamas, provide liquidity, stake tokens, post
-            educational content, and apply for grants.
+            information about themselves and their activities.User are allowed
+            to specify their roles as either chama admins or just normal
+            members. Chama admins will be responsible for creating the chama and
+            inviting their fellow members, and from this point all the users
+            have basically the same powers and functions as far as chama
+            operations are concerned.In the future users will be able to stake
+            the native ChamaDAO token to vote on proposals affecting the whole
+            platform. The voting power will be determined based on the tokens
+            staked and also transactions made through the platform.
           </p>
         </section>
 
@@ -99,16 +124,26 @@ const Whitepaper = () => {
           <p className="leading-relaxed">
             A Chama is a group of members who pool resources for collective
             financial activities. Within ChamaDAO, each Chama operates as an
-            independent DAO with decisions made collectively by its members.
+            independent DAO with decisions made collectively by its members. The
+            important thing to note is that chama have always been{" "}
+            <span className="italic text-primary">DAOs</span> in some sense as
+            they are founded in the spirit of collective action and decision
+            making. However, lack of transparency and effective data management
+            has always been a challenge. ChamaDAO aims to solve this by
+            providing a platform that is transparent, secure and efficient.
+            Hence a chama will continue with operations as usual, but now
+            on-chain, with verifiable data and automated processes.
           </p>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
             Functionality: Creating, Joining, and Managing Chamas
           </h3>
           <p className="leading-relaxed">
-            Users can create Chamas and invite others to join. Each Chama must
-            have a minimum number of members to be active. Chamas can manage
-            their accounts, decide on financial strategies, provide liquidity,
-            stake tokens, and apply for grants.
+            Users(Registered as chama admins) can create Chamas and invite
+            others to join. Each Chama must have a minimum number of members to
+            be active. Chamas can manage their accounts, decide on financial
+            strategies, provide liquidity, stake tokens, and apply for grants.
+            Only members who have signed up to the platform with their Internet
+            Identity will be able to join and create chamas.
           </p>
         </section>
 
@@ -117,29 +152,40 @@ const Whitepaper = () => {
             Financial Operations
           </h2>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Liquidity Provision & Interest Earning
+            Transactions & Payments
           </h3>
           <p className="leading-relaxed">
-            Users and Chamas can provide liquidity to canisters, earning
-            interest on their contributions. This interest is distributed among
-            liquidity providers with a small percentage going to ChamaDAO as
-            revenue.
+            What ChamaDAO see its self as is a platform that will offer a
+            blockchain infrastructure between web2 world and the decentralized
+            world. All the transactions carried out by the users will be
+            recorded on chain,and will be readily available to any chama member
+            incase of dispute or need for verifications. In additions, since
+            users will be allowed to choose their own banking platform either
+            on-chain or off-chain, ChamaDAO canisters will sit at the middle to
+            ensure that all the conditions set by the chama members are met
+            before any transaction is executed. This will ensure that the chama
+            members are in control of their funds and that they are not misused
+            by any party in or out of the chama. This will create trustless
+            agreements between chama members, and that ensure that users can
+            always rely on the smart contacts to execute their commands once a
+            condition is met.
           </p>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Staking for Voting & Loan Collateralization
+            Staking for Voting
           </h3>
           <p className="leading-relaxed">
-            Users can stake their tokens to gain voting power and access loans.
-            Staked tokens determine a user’s influence within the platform and
-            serve as collateral for over-collateralize loans.
-          </p>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Over-Collateralize Loan System
-          </h3>
-          <p className="leading-relaxed">
-            ChamaDAO’s loan system is modeled after DeFi platforms like Aave,
-            requiring borrowers to provide collateral greater than the loan
-            amount.
+            As mentioned before, once ChamaDAO launches its native token, users
+            will be able stake the native token which will earn them the voting
+            power to create and vote on proposal affecting the whole platform.
+            However to avoid Token-Based Centralization/Plutocracy the voting
+            power will be determined by the number of tokens staked and also the
+            number of transactions made through the platform. This will ensure
+            that the platform is not controlled by a few whales but by the
+            community as a whole. In addition, the platform will also require
+            that the tokens be locked/staked for a particular period of time
+            before they can be used to vote. This will ensure that the users are
+            committed to the platform and that they are not just staking for the
+            sake of voting.
           </p>
         </section>
 
@@ -151,91 +197,55 @@ const Whitepaper = () => {
             Posting & Monetizing Educational Materials
           </h3>
           <p className="leading-relaxed">
-            Users can post educational content related to finance,
+            ChamaDAO will be the first chama management platform that will allow
+            users to learn about finance, entrepreneurship, and other relevant
+            topics. Users can post educational content related to finance,
             entrepreneurship, and other relevant topics. They can set a price
             for accessing this content with a percentage of the revenue going to
-            ChamaDAO.
-          </p>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Revenue Sharing Model
-          </h3>
-          <p className="leading-relaxed">
-            Revenue from educational content is shared between the content
-            creator and ChamaDAO.
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-3xl font-heading text-text my-2 mb-2">
-            Grants & Funding
-          </h2>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Process for Organizations to Offer Grants
-          </h3>
-          <p className="leading-relaxed">
-            Organizations looking to support community development can offer
-            grants through ChamaDAO. They can specify eligibility criteria and
-            the application process.
-          </p>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Eligibility Criteria and Application Process for Chamas
-          </h3>
-          <p className="leading-relaxed">
-            Chamas can apply for grants by submitting project proposals that
-            meet the specified criteria.
+            ChamaDAO. However, it's important to note that once we launch all
+            the materials on the platform will be free and offered by the
+            ChamaDAO team alone. This is to ensure that the users are well
+            informed about the platform and that they can make informed
+            decisions about the platform. Once we roll out the feature where
+            users can also post educational materials on the site to earn some
+            tokens we plan to use the prowess of AI to validate these materials.
           </p>
         </section>
 
         <section className="mb-8">
           <h2 className="text-3xl font-heading text-text my-2 mb-2">
-            Governance
+            Chama Investment
           </h2>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Overview of the DAO Governance Model
+            How it will work
           </h3>
           <p className="leading-relaxed">
-            ChamaDAO operates as a decentralized autonomous organization with
-            governance decisions made collectively by its members. Users stake
-            tokens to gain voting power, participating in decisions that affect
-            the platform’s development and operations.
+            The platform allows chama members to create projects which will be
+            visible to the public, including the progress of these projects and
+            where they have come short in terms of funding. At the moment the
+            members are required to attach a link to a WhatsApp/Discord/Telegram
+            group where they can discuss the subject on funding further with the
+            potential investor. However, in the future we plan to integrate an
+            on-site chat platform where these discussions will happen so that
+            the ChamaDAO can obtain some revenue of the investment received by
+            the chama. In addition we will also implement KYC & AML for the
+            investor to ensure that the funds are not coming from illegal
+            activities.
           </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-3xl font-heading text-text my-2 mb-2">
+            Tokenomics
+          </h2>
           <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Tokenomics: Distribution, Staking & Voting Mechanisms
+            Distribution, Staking & Voting Mechanisms
           </h3>
-          <p className="leading-relaxed">
-            <TokenDistribution />
-          </p>
+          <TokenDistribution />
         </section>
 
         <section className="mb-8">
           <h2 className="text-3xl font-heading text-text my-2 mb-2">Roadmap</h2>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Phased Feature Releases
-          </h3>
-          <p className="leading-relaxed">
-            Phase 1: User onboarding, profile creation, wallet connection, basic
-            staking features, creating and joining Chamas.
-          </p>
-          <p className="leading-relaxed">
-            Phase 2: Liquidity provision, interest earning, over-collateralized
-            loan system, Chama project management, and financial goals.
-          </p>
-          <p className="leading-relaxed">
-            Phase 3: AI system for content verification, grant application &
-            management, advanced staking and voting features.
-          </p>
-          <p className="leading-relaxed">
-            Phase 4: Custom canister creation for liquidity provision by users,
-            enhanced chat & discussion features for Chamas, M-PESA integration.
-          </p>
-          <h3 className="text-2xl font-heading text-gray-500 mb-2">
-            Long-term Vision
-          </h3>
-          <p className="leading-relaxed">
-            ChamaDAO aims to become a leading platform for decentralized
-            community finance, continually evolving to meet user needs and
-            technological advancements.
-          </p>
           <Link to="/roadmap">
             <p className="text-center font-body font-semibold text-xl text-primary cursor-pointer my-5">
               See Roadmap.

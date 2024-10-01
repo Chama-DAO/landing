@@ -18,6 +18,10 @@ const TokenDistribution = () => {
       <h2 className="text-2xl font-semibold text-primary mb-4">
         Token Distribution
       </h2>
+      <p className="text-gray-500 my-2">
+        Once ChamaDAO reaches the token distribution phase, the tokens will be
+        distributed as follows:
+      </p>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-gray-100 shadow-lg rounded-lg mb-8 font-body">
           <thead>
@@ -109,9 +113,12 @@ const TokenDistribution = () => {
       </div>
 
       <h2 className="text-2xl font-semibold text-primary mb-4">Token Usage</h2>
+      <p className="text-gray-500">
+        Once we launch ChamaDAO token this is how we plan on how we will use it:
+      </p>
       <ul className="list-disc list-inside text-lg mb-6 font-body">
         <li className="leading-relaxed my-2">
-          Presale Participants: Tokens will be sold to early investors,
+          Pre-sale Participants: Tokens will be sold to early investors,
           providing initial funding for the project.
         </li>
         <li className="leading-relaxed my-2">

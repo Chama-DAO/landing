@@ -1,7 +1,10 @@
 import React from "react";
 import appImage from "../assets/app.webp";
+import useCountDown from "../hooks/useCountDown";
 
 function ChamaApp() {
+  const { days, hours, minutes, seconds } = useCountDown();
+
   return (
     <div>
       <div className="flex h-screen flex-col bg-white max-w-[1100px] mx-auto my-0">
@@ -20,6 +23,15 @@ function ChamaApp() {
             <p className="mt-4 text-gray-500 font-body">
               This will be an awesome place soon😊
             </p>
+            <div>
+              <h1>Beta Launch Countdown</h1>
+              <div>
+                <span>{days}d </span>
+                <span>{hours}h </span>
+                <span>{minutes}m </span>
+                <span>{seconds}s</span>
+              </div>
+            </div>
 
             <a
               href="#"
