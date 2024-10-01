@@ -25,7 +25,7 @@ function Token() {
 
   return (
     <div className="mt-12">
-      <h1 className=" text-center text-3xl px-2 font-extrabold text-gray-900 py-10 sm:text-5xl font-heading">
+      <h1 className=" text-center text-3xl px-2 font-extrabold text-gray-900 py-10 sm:text-2xl font-heading">
         The Token Powering Impact
       </h1>{" "}
       <section>
@@ -39,10 +39,10 @@ function Token() {
                   </h2>
 
                   <p className="mt-4 text-gray-500 font-body">
-                    CMC is Chama DAO's native token, unlocking a world of
-                    collective impact and governance. Hold CMC to invest in
-                    impactful projects, vote on key decisions, get loans and
-                    educational materials and shape the future of the DAO.
+                    CMC will be Chama DAO's native token, unlocking a world of
+                    collective impact and governance. With CMC members will be
+                    able to get financial rewards, participate on the landscape
+                    of the platform among many other things.
                   </p>
                 </header>
 

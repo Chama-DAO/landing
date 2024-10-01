@@ -3,7 +3,7 @@ import { HoverEffect } from "./ui/hover-effect";
 export function Advantages() {
   return (
     <div className="max-w-5xl mx-auto px-8">
-      <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl font-heading">
+      <h2 className="text-center text-4xl font-bold tracking-tight text-gray-900 sm:text-2xl font-heading">
         Why the Internet Computer?
       </h2>
       <HoverEffect items={projects} />

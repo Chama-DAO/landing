@@ -2,6 +2,9 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import { MdLaunch } from "react-icons/md";
 
 function Footer() {
   return (
@@ -10,18 +13,30 @@ function Footer() {
         <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl font-heading">
-              We're just a normal
+              Welcome to the first
               <strong className="block font-extrabold text-primary">
                 {" "}
-                Chama{" "}
+                DAO{" "}
               </strong>
-              but faster, safer and more reliable!
+              for Chamas!
             </h2>
+            <div className="flex w-full items-center justify-center my-4">
+              <Link to="/app">
+                <HoverBorderGradient
+                  containerClassName="rounded-full"
+                  as="button"
+                  className=" bg-white text-black flex items-center space-x-2 font-body"
+                >
+                  <MdLaunch />
+                  <span>Launch App</span>
+                </HoverBorderGradient>
+              </Link>
+            </div>
 
             <p className="mx-auto mt-4 max-w-sm text-gray-500 font-body">
               Chama DAO retains the robust chama structures but supercharges
               them using blockchain technology to ensure reliability, safety and
-              faster processing speeds.
+              more inclusive chama participation.
             </p>
 
             {/* <a

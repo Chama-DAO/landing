@@ -26,7 +26,10 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   return (
     <div className="w-full h-full p-10 grid grid-cols-1 md:grid-cols-3  max-w-7xl mx-auto gap-4 relative">
       {cards.map((card, i) => (
-        <div key={i} className={cn(card.className, "")}>
+        <div
+          key={i}
+          className={cn(card.className, "shadow-xl rounded-md cursor-pointer")}
+        >
           <motion.div
             onClick={() => handleClick(card)}
             className={cn(
@@ -51,7 +54,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
           "absolute h-full w-full left-0 top-0 bg-black opacity-0 z-10",
           selected?.id ? "pointer-events-auto" : "pointer-events-none"
         )}
-        animate={{ opacity: selected?.id ? 0.3 : 0 }}
+        animate={{ opacity: selected?.id ? 0.7 : 0 }}
       />
     </div>
   );
@@ -82,7 +85,7 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           opacity: 0,
         }}
         animate={{
-          opacity: 0.6,
+          opacity: 0.8,
         }}
         className="absolute inset-0 h-full w-full bg-black opacity-60 z-10"
       />
