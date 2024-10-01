@@ -24,12 +24,22 @@ function ChamaApp() {
               This will be an awesome place soon😊
             </p>
             <div>
-              <h1>Beta Launch Countdown</h1>
-              <div>
-                <span>{days}d </span>
-                <span>{hours}h </span>
-                <span>{minutes}m </span>
-                <span>{seconds}s</span>
+              <h1 className="mt-4 text-gray-500 font-body">
+                Alpha 1 Launch Countdown
+              </h1>
+              <div className="my-4">
+                <span className="mx-1 font-body text-gray-500 text-sm font-bold p-2 shadow rounded-md bg-gray-200">
+                  {days}d{" "}
+                </span>
+                <span className="mx-1 font-body text-gray-500 text-sm font-bold p-2 shadow rounded-md bg-gray-200">
+                  {hours}h{" "}
+                </span>
+                <span className="mx-1 font-body text-gray-500 text-sm font-bold p-2 shadow rounded-md bg-gray-200">
+                  {minutes}m{" "}
+                </span>
+                <span className="mx-1 font-body text-gray-500 text-sm font-bold p-2 shadow rounded-md bg-gray-200">
+                  {seconds}s
+                </span>
               </div>
             </div>
 
