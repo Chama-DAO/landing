@@ -57,7 +57,7 @@ export const MobileNavbar = () => {
             </div>
             <IoMdClose size={34} onClick={handleToggleMenu} />
           </div>
-          <ul className="w-full flex flex-col items-center font-heading">
+          <ul className="w-full flex flex-col items-center font-heading gap-8">
             <li
               className="hover:text-primary ease-in-out duration-200 border-green-700 cursor-pointer my-10 text-2xl w-[80%] flex justify-between"
               onClick={() => handleNavigation("/whitepaper")}
