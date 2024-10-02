@@ -1,6 +1,7 @@
 import React from "react";
 import appImage from "../assets/app.webp";
 import useCountDown from "../hooks/useCountDown";
+import { Link } from "react-router-dom";
 
 function ChamaApp() {
   const { days, hours, minutes, seconds } = useCountDown();
@@ -43,12 +44,12 @@ function ChamaApp() {
               </div>
             </div>
 
-            <a
-              href="#"
+            <Link
+              to="/"
               className="mt-6 inline-block rounded bg-primary px-5 py-3 text-sm font-medium text-white font-body"
             >
               Go Back Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
