@@ -133,7 +133,7 @@ export const Header = () => {
       ></div>
       <h1 className="text-2xl md:text-7xl font-bold font-heading text-primary leading-relaxed py-4 relative">
         Empower you community <br />
-        with ChamaDAO
+        with The ChamaDAO
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 font-body text-text relative">
         ChamaDAO is a decentralized platform designed to empower traditional
