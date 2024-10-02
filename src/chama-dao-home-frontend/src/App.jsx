@@ -7,8 +7,17 @@ import Features from "./pages/Features";
 import Whitepaper from "./pages/Whitepaper";
 import ChamaApp from "./pages/ChamaApp";
 import ErrorPage from "./components/ErrorPage";
+import { initSatellite } from "@junobuild/core";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    (async () =>
+      await initSatellite({
+        satelliteId: "kmztx-bqaaa-aaaal-amiiq-cai",
+      }))();
+  }, []);
+
   return (
     <Router>
       <div className="hidden md:block w-[100%] z-10">
